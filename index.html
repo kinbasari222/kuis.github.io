@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kuis Pilihan Ganda</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+<div class="coution">Pilihlah jawaban yang tepat pada setiap soal yang ada dibawah ini!</div>
+  <form id="quizForm">
+    <div class="question" data-correct="2">
+      <p><b>1. Apa ibu kota Indonesia?</b></p>
+      <span class="option" onclick="select(this)" jwb="0">Bandung</span>
+      <span class="option" onclick="select(this)" jwb="0">Surabaya</span>
+      <span class="option" onclick="select(this)" jwb="1">Jakarta</span>
+      <span class="option" onclick="select(this)" jwb="0">Yogyakarta</span>
+    </div>
+
+    <div class="question" data-correct="2">
+      <p><b>2. Siapa penemu bola lampu?</b></p>
+      <span class="option" onclick="select(this)" jwb="0">Nikola Tesla</span>
+      <span class="option" onclick="select(this)" jwb="1">Thomas Edison</span>
+      <span class="option" onclick="select(this)" jwb="0">Albert Einstein</span>
+      <span class="option" onclick="select(this)" jwb="0">Isaac Newton</span>
+    </div>
+
+    <div class="question" data-correct="2">
+      <p><b>3. Berapa hasil dari 5 + 3?</b></p>
+      <span class="option" onclick="select(this)" jwb="0">6</span>
+      <span class="option" onclick="select(this)" jwb="0">7</span>
+      <span class="option" onclick="select(this)" jwb="1">8</span>
+      <span class="option" onclick="select(this)" jwb="0">9</span>
+    </div>
+    
+        <div class="question" data-correct="2">
+      <p><b>4. Berapa hasil dari 15 : 3?</b></p>
+      <span class="option" onclick="select(this)" jwb="0">6</span>
+      <span class="option" onclick="select(this)" jwb="1">5</span>
+      <span class="option" onclick="select(this)" jwb="0">4</span>
+      <span class="option" onclick="select(this)" jwb="0">3</span>
+    </div>
+  <div id="result"></div>
+    <button type="button" onclick="calculateScore()">Lihat Hasilnya</button>
+  </form>
+
+<script src="js/script.js"></script>
+</body>
+</html>
